@@ -2,7 +2,10 @@
 """Build a stawl.app-importable Draw Steel statblock JSON from a content file.
 
 Usage:
-    python3 build.py <content.json> [output_dir]
+    python build.py <content.json> <output_dir>
+
+<output_dir> (required) is the project directory: the schema is read from
+<output_dir>/statblock.schema.json and the result is written there.
 
 The content file holds only content fields (see references/statblock-format.md).
 This script:
@@ -136,8 +139,11 @@ def main():
         print(__doc__)
         return 1
 
+    if len(sys.argv) < 3:
+        print("usage: python build.py <content.json> <output_dir>", file=sys.stderr)
+        return 1
     content_path = Path(sys.argv[1])
-    out_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else Path.cwd()
+    out_dir = Path(sys.argv[2])
     schema_path = out_dir / "statblock.schema.json"
 
     content = json.loads(content_path.read_text())

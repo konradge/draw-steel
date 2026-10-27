@@ -53,15 +53,15 @@
           "tier2": "4 acid damage; A < 1 slowed (save ends)",
           "tier3": "6 acid damage; A < 2 slowed (save ends)",
           "ordinal": 1,
-          "id": "SZCkYX1Ymh",
-          "createdAt": "2026-10-27T17:31:38.237216Z",
-          "updatedAt": "2026-10-27T17:31:38.237216Z"
+          "id": "07i9wg68Uk",
+          "createdAt": "2026-10-27T18:20:08.353278Z",
+          "updatedAt": "2026-10-27T18:20:08.353278Z"
         }
       ],
       "ordinal": 1,
-      "id": "vj7snz3K4V",
-      "createdAt": "2026-10-27T17:31:38.237216Z",
-      "updatedAt": "2026-10-27T17:31:38.237216Z"
+      "id": "NHDmDe3p09",
+      "createdAt": "2026-10-27T18:20:08.353278Z",
+      "updatedAt": "2026-10-27T18:20:08.353278Z"
     },
     {
       "featureType": "ability",
@@ -90,15 +90,15 @@
           "tier2": "8 fire damage; I < 1 dazed (EoT)",
           "tier3": "11 fire damage; I < 2 dazed (save ends)",
           "ordinal": 1,
-          "id": "wb4IoxZbWO",
-          "createdAt": "2026-10-27T17:31:38.237216Z",
-          "updatedAt": "2026-10-27T17:31:38.237216Z"
+          "id": "PqQcsWxgum",
+          "createdAt": "2026-10-27T18:20:08.353278Z",
+          "updatedAt": "2026-10-27T18:20:08.353278Z"
         }
       ],
       "ordinal": 2,
-      "id": "YKITIBcUgS",
-      "createdAt": "2026-10-27T17:31:38.237216Z",
-      "updatedAt": "2026-10-27T17:31:38.237216Z"
+      "id": "qsnpRyESRp",
+      "createdAt": "2026-10-27T18:20:08.353278Z",
+      "updatedAt": "2026-10-27T18:20:08.353278Z"
     },
     {
       "featureType": "ability",
@@ -125,15 +125,15 @@
           "tier2": "",
           "tier3": "",
           "ordinal": 1,
-          "id": "4L3gkFi4JD",
-          "createdAt": "2026-10-27T17:31:38.237216Z",
-          "updatedAt": "2026-10-27T17:31:38.237216Z"
+          "id": "2ZgJAmtYxG",
+          "createdAt": "2026-10-27T18:20:08.353278Z",
+          "updatedAt": "2026-10-27T18:20:08.353278Z"
         }
       ],
       "ordinal": 3,
-      "id": "C1xd2RiP1R",
-      "createdAt": "2026-10-27T17:31:38.237216Z",
-      "updatedAt": "2026-10-27T17:31:38.237216Z"
+      "id": "kh9FWJRBhr",
+      "createdAt": "2026-10-27T18:20:08.353278Z",
+      "updatedAt": "2026-10-27T18:20:08.353278Z"
     },
     {
       "featureType": "trait",
@@ -149,9 +149,9 @@
       "trigger": "",
       "outcomes": [],
       "ordinal": 4,
-      "id": "c25gkXh9Bx",
-      "createdAt": "2026-10-27T17:31:38.237216Z",
-      "updatedAt": "2026-10-27T17:31:38.237216Z"
+      "id": "05gJHDnl2H",
+      "createdAt": "2026-10-27T18:20:08.353278Z",
+      "updatedAt": "2026-10-27T18:20:08.353278Z"
     },
     {
       "featureType": "trait",
@@ -167,9 +167,9 @@
       "trigger": "",
       "outcomes": [],
       "ordinal": 5,
-      "id": "vJEmihsjRb",
-      "createdAt": "2026-10-27T17:31:38.237216Z",
-      "updatedAt": "2026-10-27T17:31:38.237216Z"
+      "id": "OgC5iaUGoM",
+      "createdAt": "2026-10-27T18:20:08.353278Z",
+      "updatedAt": "2026-10-27T18:20:08.353278Z"
     }
   ],
   "monsterBand": {
@@ -180,15 +180,15 @@
     "sections": [],
     "maliceFeatures": [],
     "monsters": [],
-    "id": "FqRCvGLrbW",
-    "createdAt": "2026-10-27T17:31:38.237216Z",
-    "updatedAt": "2026-10-27T17:31:38.237216Z"
+    "id": "yc4d5TJY93",
+    "createdAt": "2026-10-27T18:20:08.353278Z",
+    "updatedAt": "2026-10-27T18:20:08.353278Z"
   },
   "tokenImage": null,
   "public": false,
   "source": "Community",
   "isOwner": true,
-  "id": "zTPSuLs8E5",
-  "createdAt": "2026-10-27T17:31:38.237216Z",
-  "updatedAt": "2026-10-27T17:31:38.237216Z"
+  "id": "wPUe860M4Y",
+  "createdAt": "2026-10-27T18:20:08.353278Z",
+  "updatedAt": "2026-10-27T18:20:08.353278Z"
 }
