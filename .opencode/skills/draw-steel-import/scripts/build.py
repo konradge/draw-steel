@@ -120,14 +120,35 @@ def build(content, now_str):
     return doc, errors
 
 
-def validate(doc, schema_path):
+def ensure_jsonschema():
     try:
         import jsonschema
+        return jsonschema
     except ImportError:
-        import subprocess
-        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "jsonschema"],
-                       check=True)
-        import jsonschema
+        pass
+
+    # Same fallback chain as pdf.py: externaly-managed Pythons (PEP 668)
+    # reject plain pip installs, so try --user and --break-system-packages.
+    import subprocess
+    for args in (["-m", "pip", "install", "-q", "jsonschema"],
+                 ["-m", "pip", "install", "-q", "--user", "jsonschema"],
+                 ["-m", "pip", "install", "-q", "--break-system-packages", "jsonschema"]):
+        print(f"jsonschema not found — trying: {sys.executable} {' '.join(args)}",
+              file=sys.stderr)
+        if subprocess.run([sys.executable] + args).returncode == 0:
+            try:
+                import jsonschema
+                return jsonschema
+            except ImportError:
+                continue
+    print("could not install jsonschema automatically. "
+          "Install it manually (python -m pip install jsonschema) and re-run.",
+          file=sys.stderr)
+    sys.exit(1)
+
+
+def validate(doc, schema_path):
+    jsonschema = ensure_jsonschema()
 
     schema = json.loads(schema_path.read_text())
     validator = jsonschema.Draft202012Validator(schema)
